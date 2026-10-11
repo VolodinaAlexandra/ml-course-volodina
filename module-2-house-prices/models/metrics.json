@@ -1,0 +1,60 @@
+{
+  "selection_metric": "five-fold CV RMSE on log1p(SalePrice)",
+  "best_model": "Lasso",
+  "models": {
+    "Linear Regression": {
+      "rmse_log": 0.12426285104477126,
+      "mae_log": 0.0880854932266602,
+      "r2_log": 0.9172543039050025,
+      "rmse_dollars": 22887.046606274733,
+      "mae_dollars": 15260.402222337387,
+      "train_time_sec": 0.13319619998219423,
+      "cv_rmse_log": null,
+      "parameters": {}
+    },
+    "Ridge": {
+      "rmse_log": 0.12300324101851441,
+      "mae_log": 0.08610054997746146,
+      "r2_log": 0.9189233312815317,
+      "rmse_dollars": 22361.74745306886,
+      "mae_dollars": 14903.636302440258,
+      "train_time_sec": 0.9462249999924097,
+      "cv_rmse_log": 0.11966250848537249,
+      "parameters": {
+        "alpha": 100.0
+      }
+    },
+    "Lasso": {
+      "rmse_log": 0.11994303814132012,
+      "mae_log": 0.0822689633594626,
+      "r2_log": 0.9229073673134391,
+      "rmse_dollars": 21859.46598169552,
+      "mae_dollars": 14282.227137485876,
+      "train_time_sec": 7.033762500010198,
+      "cv_rmse_log": 0.11455683372419098,
+      "parameters": {
+        "alpha": 0.002
+      }
+    },
+    "ElasticNet": {
+      "rmse_log": 0.12062978121589571,
+      "mae_log": 0.08305225405988555,
+      "r2_log": 0.9220220404692171,
+      "rmse_dollars": 21964.96487553773,
+      "mae_dollars": 14402.006155358416,
+      "train_time_sec": 17.46981350000715,
+      "cv_rmse_log": 0.11576069636667967,
+      "parameters": {
+        "alpha": 0.002,
+        "l1_ratio": 0.8
+      }
+    }
+  },
+  "lasso_features_selected": 131,
+  "lasso_features_dropped": 133,
+  "training_date": "2026-10-11",
+  "training_rows": 1166,
+  "validation_rows": 292,
+  "removed_training_outliers": 2,
+  "feature_count": 264
+}
