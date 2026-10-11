@@ -25,4 +25,16 @@ import joblib
 import requests
 
 BASE_URL = "https://raw.githubusercontent.com/VolodinaAlexandra/ml-course-volodina/main/module-2-house-prices"
+
+def download(path):
+    response = requests.get(f"{BASE_URL}/{path}", timeout=30)
+    response.raise_for_status()
+    return response.content
+
+model = joblib.load(BytesIO(download("models/best_model.pkl")))
+scaler = joblib.load(BytesIO(download("models/scaler.pkl")))
+preprocessor = joblib.load(BytesIO(download("models/preprocessor.pkl")))
+feature_cols = json.loads(download("models/feature_cols.json").decode("utf-8"))
 ```
+
+Функция `predict_price()` и пять примеров её использования находятся в [ноутбуке](./notebook.ipynb). Удалённые прогнозы для трёх домов проверены в разделе 11.
