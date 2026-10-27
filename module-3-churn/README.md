@@ -13,9 +13,9 @@
 | CatBoost | 0.7544 | 0.5263 | 0.7487 | 0.6181 | 0.8378 |
 | **LightGBM (Optuna)** | 0.7452 | 0.5128 | 0.8021 | 0.6257 | 0.8502 |
 
-**Время обучения:** Random Forest: 1.137 с, XGBoost: 0.545 с, LightGBM: 0.276 с, CatBoost: 1.646 с.
+**Время обучения:** Random Forest: 1.174 с, XGBoost: 0.401 с, LightGBM: 0.252 с, CatBoost: 1.262 с.
 
-**Optuna:** 30 испытаний, 5-fold train CV; ROC-AUC 0.8405 → 0.8496. Поиск: 53.04 с. Финальный fit: 0.280 с.
+**Optuna:** 30 испытаний, 5-fold train CV; ROC-AUC 0.8405 → 0.8496. Поиск: 38.40 с. Финальный fit: 0.271 с.
 
 Таблица показывает тестовые метрики при пороге 0,5. Параметры выбраны по train CV. Категории кодируются LabelEncoder по заданию; scaler сохраняется, но не применяется к деревьям.
 
@@ -29,7 +29,7 @@ jupyter notebook notebook.ipynb
 
 Полный код и его результаты находятся в последней исполняемой ячейке notebook.ipynb. Для открытия Jupyter установите notebook, если он ещё не установлен.
 
-После самостоятельной публикации в main:
+Загрузка из опубликованной ветки main:
 
 ```python
 import joblib
@@ -42,7 +42,7 @@ response.raise_for_status()
 model = joblib.load(BytesIO(response.content))
 ```
 
-Для сырых клиентов нужны также label_encoders.pkl, preprocessor.json, feature_cols.json и функция transform_clients() из ноутбука. Локальная загрузка проверена на трёх клиентах; raw-файлы модуля пока возвращают 404.
+Для сырых клиентов нужны также label_encoders.pkl, preprocessor.json, feature_cols.json и функция transform_clients() из ноутбука. Локальная и raw-загрузка проверены на трёх клиентах: классы и вероятности совпали.
 
 ## 📁 Структура
 

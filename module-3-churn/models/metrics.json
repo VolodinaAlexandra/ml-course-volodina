@@ -30,10 +30,10 @@
     }
   },
   "fit_time_sec": {
-    "Random Forest": 1.1365384999662638,
-    "XGBoost": 0.5451364000327885,
-    "LightGBM": 0.2759111999766901,
-    "CatBoost": 1.646068999893032
+    "Random Forest": 1.1741959999781102,
+    "XGBoost": 0.40143959992565215,
+    "LightGBM": 0.2523923999397084,
+    "CatBoost": 1.2618561000563204
   },
   "tuned": {
     "accuracy": 0.7452093683463449,
@@ -60,8 +60,8 @@
   },
   "n_trials": 30,
   "cv_folds": 5,
-  "search_time_sec": 53.03521400003228,
-  "tuned_fit_time_sec": 0.2797749999444932,
+  "search_time_sec": 38.39923639991321,
+  "tuned_fit_time_sec": 0.2708048999775201,
   "train_rows": 5634,
   "test_rows": 1409,
   "feature_count": 23,
