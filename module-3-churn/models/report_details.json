@@ -1,0 +1,165 @@
+{
+  "metrics": {
+    "baseline": {
+      "Random Forest": {
+        "accuracy": 0.7601135557132718,
+        "precision": 0.5346153846153846,
+        "recall": 0.7433155080213903,
+        "f1": 0.6219239373601789,
+        "roc_auc": 0.8388126792218865
+      },
+      "XGBoost": {
+        "accuracy": 0.7572746628814763,
+        "precision": 0.5334728033472803,
+        "recall": 0.6818181818181818,
+        "f1": 0.5985915492957746,
+        "roc_auc": 0.8265467979022966
+      },
+      "LightGBM": {
+        "accuracy": 0.7572746628814763,
+        "precision": 0.5305343511450382,
+        "recall": 0.7433155080213903,
+        "f1": 0.6191536748329621,
+        "roc_auc": 0.8366090573251699
+      },
+      "CatBoost": {
+        "accuracy": 0.7544357700496807,
+        "precision": 0.5263157894736842,
+        "recall": 0.7486631016042781,
+        "f1": 0.6181015452538632,
+        "roc_auc": 0.8377909530083443
+      }
+    },
+    "fit_time_sec": {
+      "Random Forest": 1.1365384999662638,
+      "XGBoost": 0.5451364000327885,
+      "LightGBM": 0.2759111999766901,
+      "CatBoost": 1.646068999893032
+    },
+    "tuned": {
+      "accuracy": 0.7452093683463449,
+      "precision": 0.5128205128205128,
+      "recall": 0.8021390374331551,
+      "f1": 0.6256517205422315,
+      "roc_auc": 0.850214420419024
+    },
+    "best_model": "LightGBM (Optuna)",
+    "baseline_test_winner": "Random Forest",
+    "cv_baseline_roc_auc": 0.8405494535357867,
+    "cv_best_roc_auc": 0.8496459881977148,
+    "best_params": {
+      "n_estimators": 350,
+      "num_leaves": 90,
+      "max_depth": 3,
+      "learning_rate": 0.022943298923083385,
+      "subsample": 0.6236369825139823,
+      "colsample_bytree": 0.5164731483152039,
+      "min_child_samples": 35,
+      "reg_alpha": 0.002886956542416407,
+      "reg_lambda": 7.328751913955659,
+      "subsample_freq": 1
+    },
+    "n_trials": 30,
+    "cv_folds": 5,
+    "search_time_sec": 53.03521400003228,
+    "tuned_fit_time_sec": 0.2797749999444932,
+    "train_rows": 5634,
+    "test_rows": 1409,
+    "feature_count": 23,
+    "seed": 42,
+    "threshold": 0.5,
+    "training_date": "2026-10-27",
+    "versions": {
+      "pandas": "3.0.5",
+      "numpy": "2.5.3",
+      "scikit-learn": "1.9.1",
+      "xgboost": "3.0.0",
+      "lightgbm": "4.6.0",
+      "catboost": "1.2.8",
+      "optuna": "5.0.0",
+      "shap": "0.54.1",
+      "matplotlib": "3.11.1",
+      "seaborn": "0.13.2",
+      "joblib": "1.6.0",
+      "requests": "2.32.3"
+    },
+    "data_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91"
+  },
+  "contract_rates": {
+    "mean": {
+      "Month-to-month": 0.4270967741935484,
+      "One year": 0.11269517990495587,
+      "Two year": 0.02831858407079646
+    },
+    "count": {
+      "Month-to-month": 3875,
+      "One year": 1473,
+      "Two year": 1695
+    }
+  },
+  "internet_rates": {
+    "mean": {
+      "DSL": 0.1895910780669145,
+      "Fiber optic": 0.4189276485788114,
+      "No": 0.07404980340760157
+    },
+    "count": {
+      "DSL": 2421,
+      "Fiber optic": 3096,
+      "No": 1526
+    }
+  },
+  "new_rates": {
+    "False": 0.1950737144911902,
+    "True": 0.5293720459149224
+  },
+  "baseline_cm": [
+    [
+      793,
+      242
+    ],
+    [
+      96,
+      278
+    ]
+  ],
+  "importance": {
+    "Contract": 15551.640775413485,
+    "MonthlyCharges": 4920.21719261297,
+    "TotalCharges": 4408.556183361543,
+    "tenure": 4362.778240822249,
+    "AvgMonthlyCharge": 3700.00651220441
+  },
+  "shap_top": {
+    "Contract": 0.7168087922646774,
+    "OnlineSecurity": 0.2770130998275603,
+    "tenure": 0.26851467173072746,
+    "MonthlyCharges": 0.2586990698889903,
+    "TechSupport": 0.21641367808008613
+  },
+  "shap_feature": "Contract",
+  "worst_customer": "5178-LMXOP",
+  "worst_proba": 0.9507704028981545,
+  "local_shap": {
+    "Contract": {
+      "raw_value": "Month-to-month",
+      "value": 0.7684112484582211
+    },
+    "tenure": {
+      "raw_value": "1",
+      "value": 0.5584059208933991
+    },
+    "TenureYears": {
+      "raw_value": "0.08333333333333333",
+      "value": 0.3172675423982604
+    },
+    "MonthlyCharges": {
+      "raw_value": "95.1",
+      "value": 0.30609632698291134
+    },
+    "OnlineSecurity": {
+      "raw_value": "No",
+      "value": 0.27451622022232286
+    }
+  }
+}

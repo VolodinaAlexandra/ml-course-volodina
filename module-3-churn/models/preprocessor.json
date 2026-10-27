@@ -1,0 +1,28 @@
+{
+  "total_charges_median": 1398.125,
+  "feature_cols": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "TenureYears",
+    "AvgMonthlyCharge",
+    "IsNewClient",
+    "HasMultipleServices"
+  ]
+}
