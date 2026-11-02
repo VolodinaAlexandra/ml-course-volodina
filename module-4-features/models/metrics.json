@@ -30,10 +30,10 @@
     }
   },
   "fit_time_sec": {
-    "Random Forest": 1.7976335999992443,
-    "XGBoost": 0.7645391000005475,
-    "LightGBM": 0.3054200000005949,
-    "CatBoost": 2.0598393000000215
+    "Random Forest": 1.621191500002169,
+    "XGBoost": 0.716962099999364,
+    "LightGBM": 0.39563490000000456,
+    "CatBoost": 2.135041400000773
   },
   "tuned": {
     "accuracy": 0.8664481769766489,
@@ -60,8 +60,8 @@
   },
   "n_trials": 30,
   "cv_folds": 5,
-  "search_time_sec": 55.112838699998974,
-  "tuned_fit_time_sec": 0.3367078999981459,
+  "search_time_sec": 54.90311500000098,
+  "tuned_fit_time_sec": 0.36143079999965266,
   "source_rows": 12330,
   "clean_rows": 12205,
   "removed_duplicates": 125,
