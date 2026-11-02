@@ -1,0 +1,124 @@
+{
+  "baseline": {
+    "Random Forest": {
+      "accuracy": 0.8725931995083982,
+      "precision": 0.5617391304347826,
+      "recall": 0.8455497382198953,
+      "f1": 0.6750261233019854,
+      "roc_auc": 0.933233995051733
+    },
+    "XGBoost": {
+      "accuracy": 0.8791478902089308,
+      "precision": 0.5893223819301848,
+      "recall": 0.7513089005235603,
+      "f1": 0.6605293440736478,
+      "roc_auc": 0.9299944821483513
+    },
+    "LightGBM": {
+      "accuracy": 0.8713641950020483,
+      "precision": 0.5631970260223048,
+      "recall": 0.7931937172774869,
+      "f1": 0.658695652173913,
+      "roc_auc": 0.9321342389051769
+    },
+    "CatBoost": {
+      "accuracy": 0.8734125358459648,
+      "precision": 0.5662431941923775,
+      "recall": 0.8167539267015707,
+      "f1": 0.6688102893890675,
+      "roc_auc": 0.9328360486079502
+    }
+  },
+  "fit_time_sec": {
+    "Random Forest": 1.7976335999992443,
+    "XGBoost": 0.7645391000005475,
+    "LightGBM": 0.3054200000005949,
+    "CatBoost": 2.0598393000000215
+  },
+  "tuned": {
+    "accuracy": 0.8664481769766489,
+    "precision": 0.5469798657718121,
+    "recall": 0.8534031413612565,
+    "f1": 0.6666666666666666,
+    "roc_auc": 0.9365046571176472
+  },
+  "best_model": "LightGBM (Optuna)",
+  "baseline_test_winner": "Random Forest",
+  "cv_baseline_roc_auc": 0.926886071120145,
+  "cv_best_roc_auc": 0.9351712753763991,
+  "best_params": {
+    "n_estimators": 200,
+    "num_leaves": 30,
+    "max_depth": 6,
+    "learning_rate": 0.010625520240503112,
+    "subsample": 0.8427691130411582,
+    "colsample_bytree": 0.9312446855299032,
+    "min_child_samples": 42,
+    "reg_alpha": 0.813162965787202,
+    "reg_lambda": 0.13700169099277154,
+    "subsample_freq": 1
+  },
+  "n_trials": 30,
+  "cv_folds": 5,
+  "search_time_sec": 55.112838699998974,
+  "tuned_fit_time_sec": 0.3367078999981459,
+  "source_rows": 12330,
+  "clean_rows": 12205,
+  "removed_duplicates": 125,
+  "train_rows": 9764,
+  "test_rows": 2441,
+  "feature_count": 84,
+  "seed": 42,
+  "threshold": 0.5,
+  "training_date": "2026-11-02",
+  "versions": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.0.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.8",
+    "optuna": "5.0.0",
+    "shap": "0.54.1",
+    "matplotlib": "3.11.1",
+    "seaborn": "0.13.2",
+    "joblib": "1.6.0",
+    "requests": "2.32.3"
+  },
+  "feature_experiment": {
+    "Original": {
+      "mean": 0.9267753194507533,
+      "std": 0.006597789820739376,
+      "fold_scores": [
+        0.9221440448269977,
+        0.9194890975648575,
+        0.9282667515518065,
+        0.9385663695686773,
+        0.9254103337414276
+      ]
+    },
+    "Engineered": {
+      "mean": 0.926886071120145,
+      "std": 0.006670806471975471,
+      "fold_scores": [
+        0.923935775484045,
+        0.9178000159159636,
+        0.9265438484800255,
+        0.9382957981855802,
+        0.9278549175351111
+      ]
+    },
+    "WithoutPageValues": {
+      "mean": 0.7723829075978996,
+      "std": 0.013287657260406769,
+      "fold_scores": [
+        0.7671246195300627,
+        0.7556839885405061,
+        0.7957623746617858,
+        0.7754595734521725,
+        0.7678839818049707
+      ]
+    }
+  },
+  "data_sha256": "b3055ee355f59134d851d32641183cb4a8b45def7124d2f50442a042f358e0d9"
+}

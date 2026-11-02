@@ -12,7 +12,7 @@
 | 1   | module-1-titanic      | EDA + бинарная классификация | ✅ Готово    | [Открыть](./module-1-titanic/)      |
 | 2   | module-2-house-prices | Предобработка + регрессия    | ✅ Готово    | [Открыть](./module-2-house-prices/) |
 | 3 | module-3-churn | Ансамблевые методы | ✅ Готово | [Открыть](./module-3-churn/) |
-| 4   | module-4-...          | ...                          | ⏳ Ожидается | —                                   |
+| 4 | module-4-features | Инженерия признаков | ✅ Готово | [Открыть](./module-4-features/) |
 | 5   | module-5-...          | ...                          | ⏳ Ожидается | —                                   |
 | 6   | module-6-...          | ...                          | ⏳ Ожидается | —                                   |
 | 7   | module-7-...          | ...                          | ⏳ Ожидается | —                                   |
@@ -24,3 +24,4 @@
 | 1      | Logistic Regression | ROC-AUC = 0.8486                 | 2026-09-27 |
 | 2      | Lasso               | R² = 0.9229; RMSE (log) = 0.1199 | 2026-10-13 |
 | 3 | LightGBM (Optuna) | ROC-AUC = 0.8502; F1 = 0.6257 | 2026-10-27 |
+| 4 | LightGBM (Optuna) | ROC-AUC = 0.9365; F1 = 0.6667 | 2026-11-02 |
